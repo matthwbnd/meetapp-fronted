@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import './config/ReactotronConfig';
 
-// import { Container } from './styles';
+import GlobalStyle from './styles/global';
 
-const App = () => <h1>Olá, mundo</h1>;
+const App = () => <GlobalStyle />;
 
 export default App;
