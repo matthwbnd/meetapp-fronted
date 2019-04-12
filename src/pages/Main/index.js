@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import api from '~/services/api';
 
-import { Container } from './styles';
+// import { Container } from './styles';
 
-const Main = () => (
-  <Container>
-    <h1>Olá, Main</h1>
-  </Container>
-);
+import Header from '~/components/Header';
 
-export default Main;
+export default class Main extends Component {
+  componentDidMount() {
+    api.get('/');
+  }
+
+  render() {
+    return <Header />;
+  }
+}
