@@ -16,7 +16,7 @@ export default createGlobalStyle`
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     background: #271F2C;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     color: #fff;
   }
 
