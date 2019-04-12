@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Provider } from 'react-redux';
-import './config/ReactotronConfig';
-import { BrowserRouter } from 'react-router-dom';
+import ReduxToastr from 'react-redux-toastr';
 
 import GlobalStyle from './styles/global';
 
@@ -10,10 +9,11 @@ import store from './store';
 
 const App = () => (
   <Provider store={store}>
-    <BrowserRouter>
-      <GlobalStyle />
+    <Fragment>
       <Routes />
-    </BrowserRouter>
+      <ReduxToastr />
+      <GlobalStyle />
+    </Fragment>
   </Provider>
 );
 
