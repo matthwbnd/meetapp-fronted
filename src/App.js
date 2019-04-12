@@ -11,7 +11,7 @@ const App = () => (
   <Provider store={store}>
     <Fragment>
       <Routes />
-      <ReduxToastr />
+      <ReduxToastr progressBar closeOnToastrClick />
       <GlobalStyle />
     </Fragment>
   </Provider>
