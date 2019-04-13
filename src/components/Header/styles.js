@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
-  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -42,4 +41,8 @@ export const Profile = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
+`;
+
+export const Icon = styled.i`
+  font-size: 32px;
 `;

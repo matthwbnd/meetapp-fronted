@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
+import 'font-awesome/css/font-awesome.css';
+import 'input-moment/dist/input-moment.css';
 
 export default createGlobalStyle`
   * {

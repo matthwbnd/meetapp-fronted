@@ -1,12 +1,9 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-
 import Logo from '../../assets/images/logo-white.svg';
 
 import {
-  Container, Image, Menu, MenuList, MenuItem, Go, Profile,
+  Container, Image, Menu, MenuList, MenuItem, Go, Profile, Icon,
 } from './styles';
 
 const Header = () => (
@@ -21,13 +18,13 @@ const Header = () => (
           <Go to="/search">Buscar</Go>
         </MenuItem>
         <MenuItem>
-          <Go to="/new-meetup">Novo meetup</Go>
+          <Go to="/meetups/new">Novo meetup</Go>
         </MenuItem>
       </MenuList>
     </Menu>
     <Profile>
       <Go to="/profile">
-        <FontAwesomeIcon icon={faUser} size="lg" />
+        <Icon className="fa fa-user-circle-o" />
       </Go>
     </Profile>
   </Container>

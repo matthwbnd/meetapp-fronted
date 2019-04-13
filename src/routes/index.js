@@ -10,6 +10,7 @@ import Guest from './guest';
 import Main from '~/pages/Main';
 import SignIn from '~/pages/Auth/SignIn';
 import SignUp from '~/pages/Auth/SignUp';
+import New from '~/pages/Meetups/New';
 
 const Routes = () => (
   <ConnectedRouter history={history}>
@@ -17,6 +18,7 @@ const Routes = () => (
       <Guest path="/signin" component={SignIn} />
       <Guest path="/signup" component={SignUp} />
       <Private exact path="/" component={Main} />
+      <Private path="/meetups/new" component={New} />
     </Switch>
   </ConnectedRouter>
 );
